@@ -8,6 +8,7 @@ Created on Tue Jul 14 10:32:20 2020
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 df = pd.read_csv(
     "C:/Users/Damien/Desktop/Data Science Projects/ESports/datasets_Esports.csv",
@@ -38,6 +39,9 @@ def plot_totals(sum_df, value):
     plt.xlabel("Years")
 
     return plt.show()
+
+def correlation_plot(df):
+    return sns.pairplot(df, corner = True, diag_kind="kde", kind="scatter")
 
 df_2020 = df[df['Year'] == 2020]    
 df_2019 = df[df['Year'] == 2019]
@@ -499,3 +503,4 @@ def plot_top10_games(df, value):
 def plot_top10_all(value): #value = 'Earnings', 'Players', or 'Tournaments'
     for i in range(0, len(df_list)):
         plot_top10_games(df_list[i], value)
+                                          
