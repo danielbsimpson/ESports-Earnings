@@ -15,6 +15,13 @@ First I visualize the total number of cash prizes available over the years with 
 
 ![]( Number_of_Tournaments_by_year.png)
 
+## Using seaborn to view correlation:
+
+Simply use seaborn library to view the correlation between tournament numbers, participants, and prize winnings
+
+![](Correlation_plots.png)
+
+
 ## Bar Chart Race by genre:
 
 Next I create a Bar Chart Race of all the genres total earnings from competitions.
