@@ -28,4 +28,6 @@ Last I create a function that allows for the top 10 highest tournament winnings 
 
 ![](Figure_21.png)
 
+Please view the full code at the .py file: ESports_Visualization.py
+
 For a more complete description please few the Kaggle notebook which this was created on:
